@@ -5,7 +5,7 @@
 ---
 
 ## 🌐 Live Demo
-🔗 **[View Live Website](https://bit.ly/book_reader)**
+🔗 **[Live Demo](https://vithun-sk.github.io/Book-Reader/)**
 
 ---
 
