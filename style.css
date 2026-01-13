@@ -1,0 +1,162 @@
+body {
+  background-color: white;
+  width: 100%;
+  height: 100%;
+}
+
+.title {
+  background-color: #fd6569;
+  color: black;
+  padding: 1px;
+  font-size: larger;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.bookscontent {
+  width: 20%;
+  height: 30%;
+  padding: 20px;
+  margin: 25px;
+  border-radius: 40px;
+  background-color: black;
+  color: #d3d3d3;
+  display: inline-block;
+  vertical-align: text-top;
+}
+
+.content h2 {
+  color: #ffd700;
+}
+
+.content h3 {
+  color: #ffd700;
+}
+
+.content button {
+  text-align: center;
+  background-color: red;
+  padding: 10px;
+  right: 20px;
+  border: none;
+  border-radius: 20px;
+  font-size: larger;
+  cursor: pointer;
+}
+
+.addbtn button {
+  background-color: #ff0000da;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  font-size: xx-large;
+  font-weight: bold;
+  border: none;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+}
+
+.popup_overlay {
+  background-color: black;
+  opacity: 0.8;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+  display: none;
+}
+
+.bookdetails {
+  background-color: #fd6569;
+  width: 40%;
+  border-radius: 20px;
+  padding: 20px;
+  position: absolute;
+  top: 25%;
+  left: 29%;
+  z-index: 2;
+  display: none;
+}
+
+.bookdetails input {
+  background: transparent;
+  color: black;
+  width: 90%;
+  padding: 10px;
+  margin: 5px;
+  border: none;
+  font-size: larger;
+  border-bottom: solid black 2px;
+  outline: none;
+}
+
+.bookdetails textarea {
+  background: transparent;
+  color: black;
+  width: 90%;
+  padding: 10px;
+  margin: 5px;
+  border: solid black 2px;
+  outline: none;
+  font-size: larger;
+}
+
+.bookdetails input::placeholder {
+  color: black;
+}
+
+.bookdetails textarea::placeholder {
+  color: black;
+}
+
+.bookdetails button {
+  background-color: black; 
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 5px;
+  cursor: pointer;
+}
+@media screen and (max-width: 480px) {
+  .title {
+    font-size: medium;
+    padding: 1px;
+  }
+  .bookscontent {
+    width: 30%;
+    height: auto;
+    margin-left: 10px;
+    font-size: x-small;
+  }
+  .addbtn button {
+    font-weight: normal;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  .bookdetails {
+    width: 50%;
+    left: 25%;
+    right: 25%;
+  }
+}
+@media screen and (max-width: 780px) {
+  .bookscontent {
+    width: 80%;
+  }
+  .bookdetails {
+    width: 85%;
+    left: 7.5%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .bookscontent {
+    width: 60%;
+  }
+}

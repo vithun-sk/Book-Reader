@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>BookWorld</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="title">
+        <h1>BookWorld </h1>
+       
+    </div>
+    <div class="content">
+        <div class="bookscontent">
+            <h2 class="bookname">Title of the book </h2>
+            <h3 class="authorame">Name of the author</h3>
+            <p class="bookDescripition">Add a Short Description about the Book</p>
+            <button class="bookdelete" onclick="deletedetails(event)">Delete</button>
+        </div>
+
+    </div>
+
+
+    <div class="addbtn">
+        <button onclick="add()">+</button>
+    </div>
+    <div class="popup_overlay"></div>
+
+
+    <div class="bookdetails">
+        <h2>Add Book</h2>
+        <input type="text" placeholder="Book Title" id="bookname">
+        <input type="text" placeholder="Author Name" id="authorname">
+        <textarea placeholder="Short Description" id="bookdescription"></textarea>
+        <button id="addbook" onclick="addbookdetails(event)">Add</button>
+        <button id="cancelbook" onclick="cancel()">Cancel</button>
+    </div>
+
+
+    <script src="code.js"></script>
+</body>
+
+</html>
